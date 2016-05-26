@@ -1,0 +1,33 @@
+{
+  "name": "fortunecookie",
+  "version": "1.0.0",
+  "description": "Get your fortune cookie today",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/orbitka/fortunecookie.git"
+  },
+  "keywords": [
+    "aphorism",
+    "fortune",
+    "cookie",
+    "slogan",
+    "motto"
+  ],
+  "author": "orbitka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/orbitka/fortunecookie/issues"
+  },
+  "homepage": "https://github.com/orbitka/fortunecookie#readme",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "ejs": "^2.4.2",
+    "express": "^4.13.4",
+    "mongoose": "^4.4.19",
+    "morgan": "^1.7.0"
+  }
+}

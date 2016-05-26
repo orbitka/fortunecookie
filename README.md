@@ -1,3 +1,8 @@
-# fortunecookie
+# Fortune Cookie
 
-- MEAN - Consumer/Service (API)
+- MEAN - Consumer/Service Api. MEAN stands for:
+   - MongoDB
+   - Express
+   - Angular
+   - Node.js
+ 
