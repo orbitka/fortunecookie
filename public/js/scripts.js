@@ -23,7 +23,7 @@ function getAllFortunecookies(callback){
   });
 }
 
-functon renderFortunecookie(fortunecookie){
+function renderFortunecookie(fortunecookie){
   var $el = $('<li>').addClass('cookie');
   $el.append( $('<h3>').text( fortunecookie.description ) );
   return $el;

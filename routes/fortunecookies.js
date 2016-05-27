@@ -7,7 +7,8 @@ var fortunecookie = require('../models/fortunecookie');
 //=============Routing===============
 router.get('/', function(req, res){
   fortunecookie.find({}, function(err, databaseFortunecookies){
-    res.json {fortunecookies: databaseFortunecookies} );
+    console.log(err);
+    res.json(databaseFortunecookies);
   });
 });
 

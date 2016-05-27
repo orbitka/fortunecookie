@@ -3,7 +3,7 @@ var mongoose = require('mongoose');
 
 //=============Schema===============
 
-var FortunecookieSchema = mongoose.schema({
+var FortunecookieSchema = mongoose.Schema({
   description: {type: String}
 });
 
