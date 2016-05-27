@@ -1,9 +1,8 @@
 //===================Modules=============
 var express = require('express');
-var morgan = require('morgan');
-
 var app = express();
 
+var morgan = require('morgan');
 app.use(morgan('dev'));
 
 app.set('view engine', 'ejs');
@@ -11,11 +10,13 @@ app.set('view engine', 'ejs');
 app.use(express.static('./public'));
 
 var bodyParser = require('body-parser');
-app.use(bodyParser.urlencoded());
+// app.use(bodyParser.urlencoded());
+app.use(bodyParser.urlencoded({ extended: false }));
 
 var mongoPath = 'mongodb://localhost/fortunecookies';
 var mongoose = require('mongoose');
 mongoose.connect(mongoPath);
+// here we have to change for HEROKU: mongoPath
 
 
 //===================Routing=============
@@ -29,7 +30,7 @@ app.use('/api/fortunecookies', fortunecookiesRouter);
 
 
 //===================Listen==============
-var port = 3000;
-app.listen(port, function(){
+var port = 8080;
+app.listen(port, function() {
   console.log('... waiting on port ' + port);
 });

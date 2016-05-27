@@ -1,3 +1,16 @@
+html{
+  background: olive
+}
+
 body {
   background: lightyellow;
+  max-width: 900px;
+  border: 4px green ridge;
+}
+
+#fortunecookie-list {
+  list-style-type: none;
+  background: white;
+  border: 1px solid silver:
+  border-radius: 5px;
 }

@@ -9,4 +9,4 @@ var FortunecookieSchema = mongoose.schema({
 
 
 //=============Exports==============
-module.exports = mongoose.model('fortunecookie', FortunecookieSchema);
+module.exports = mongoose.model('Fortunecookie', FortunecookieSchema);
