@@ -5,7 +5,7 @@ function createFortunecookie(fortunecookieData, callback) {
   $.ajax({
     method: 'post',
     url: '/api/fortunecookies',
-    data: {fortunecookie: fortunecookieData},
+    data: fortunecookieData,
     success: function(data){
       callback(data);
     }
@@ -17,7 +17,7 @@ function getAllFortunecookies(callback){
   $.ajax({
     url: '/api/fortunecookies',
     success: function(data){
-      var fortunecookies = data.fortunecookies;
+      var fortunecookies = data;
       callback(fortunecookies);
     }
   });
