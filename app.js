@@ -13,7 +13,7 @@ var bodyParser = require('body-parser');
 // app.use(bodyParser.urlencoded());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-var mongoPath = 'mongodb://localhost/fortunecookies';
+var mongoPath = process.env.MONGODB_URI || 'mongodb://localhost/fortunecookies';
 var mongoose = require('mongoose');
 mongoose.connect(mongoPath);
 // here we have to change for HEROKU: mongoPath
